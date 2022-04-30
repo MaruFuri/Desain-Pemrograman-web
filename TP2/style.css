@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    display: flexbox;
+    background-color: grey;
+    margin: 20px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+.header {
+    display: flexbox;
+    background-color: white;
+    border-radius: 15px;
+    padding: 50px;
+    width: auto;
+    height: auto;
+}
+
+.header h1{
+    color: white;
+    background-color: grey;
+    border-radius: 15px;
+    text-align: center;
+    width: 100px;
+    margin: auto;
+}
+
+.header h4{
+    color: white;
+    background-color: grey;
+    border-radius: 15px;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.learn {
+    display: flexbox;
+    background-color: silver;
+    border-radius: 15px;
+    padding: 100px;
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+}
+
+.learn h2{
+    color: silver;
+    /* background-color: grey; */
+    border-radius: 20px;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    padding:5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.learn a{
+    /* background: rgb(68, 68, 68); */
+    background: white;
+    color: silver;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+    transition-property: background;
+    padding: 10px;
+}
+
+.learn a:hover{
+    background: rgb(68, 68, 68);
+    /* background: white; */
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.items{
+    display: flexbox;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: auto;
+    height: auto;
+}
+
+.items h3{
+    color: white;
+    background-color: grey;
+    border-radius: 15px;
+    text-align: center;
+    width: 150px;
+    margin: auto;
+    padding: 5px;
+}
+
+.items p{
+    display: inline-block;
+    color: white;
+    background-color: grey;
+    text-align: justify;
+    border-radius: 10px;
+    width: 450px;
+    height: 100px;
+    padding: 15px;
+    margin: 70px;
+    margin-top: 30px;
+}
+
+.content{
+    display: flex;
+    background-color: silver;
+    border-radius: 15px;
+    padding: 100px;
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+}
+
+.content > div h3{
+    /* color: white;
+    background-color: grey; */
+    color: grey;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    width: 150px;
+    margin: auto;
+    padding: 5px;
+}
+
+.content > div p{
+    /* color: grey;
+    background-color: white; */
+    color: white;
+    background-color: grey;
+    text-align: justify;
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.about {
+    display: flexbox;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: auto;
+    height: auto;
+}
+
+.about h3{
+    color: white;
+    background-color: grey;
+    border-radius: 15px;
+    text-align: center;
+    width: 150px;
+    margin: auto;
+    padding: 5px;
+}
+
+.about p{
+    color: white;
+    background-color: grey;
+    text-align: center;
+    border-radius: 10px;
+    width: 450px;
+    height: 100px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.about .left{
+    display: inline-block;
+    margin-top: 30px;
+    background-color: grey;
+    border-radius: 15px;
+    padding: 30px;
+    width: 500px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.about .left h3{
+    color: gray;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    width: 150px;
+    margin: auto;
+    padding: 5px;
+}
+
+.about .left p{
+    color: gray;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+}
+
+.about .right{
+    display: inline-block;
+    margin-top: 30px;
+    background-color: grey;
+    border-radius: 15px;
+    padding: 30px;
+    width: 500px;
+    height: auto;
+    margin-right: 50px;
+}
+
+.about .right h3{
+    color: gray;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    width: 150px;
+    margin: auto;
+    padding: 5px;
+}
+
+.about .right p{
+    color: gray;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Praktikum 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="item black" id="result">0</div>  <!-- Fungsi display() menampilkan teks disini  ditampilkan disini-->
+        <div class="item grey" id="clear"   onclick="clr()">C</div>
+        <div class="item grey" id="del"     onclick="clr()">←</div>
+        <div class="item orange" id="div"   onclick="input('div')">÷</div> 
+        <div class="item grey" id="seven"   onclick="input('seven')">7</div> <!-- atribut onclick akan memanggil fungsi Javascript ketika elemen diklik-->
+        <div class="item grey" id="eight"   onclick="input('eight')">8</div>
+        <div class="item grey" id="nine"    onclick="input('nine')">9</div>
+        <div class="item orange" id="times" onclick="input('times')">×</div>
+        <div class="item grey" id="four"    onclick="input('four')">4</div>
+        <div class="item grey" id="five"    onclick="input('five')">5</div>
+        <div class="item grey" id="six"     onclick="input('six')">6</div>
+        <div class="item orange" id="min"   onclick="input('min')">–</div>
+        <div class="item grey" id="one"     onclick="input('one')">1</div>
+        <div class="item grey" id="two"     onclick="input('two')">2</div>
+        <div class="item grey" id="three"   onclick="input('three')">3</div>
+        <div class="item orange" id="plus"  onclick="input('plus')">+</div>
+        <div class="item grey" id="zero"    onclick="input('zero')">0</div>
+        <div class="item orange" id="equal" onclick="count()">=</div>
+    </div>
+</body>
+</html>
+<script>
+    // Fungsi untuk mendapatkan text di elemen result saat ini, textnya akan di return
+    // Contoh penggunaan: let a = getCurrentResult();
+    const getCurrentResult = () => {
+        return document.getElementById('result').textContent; // Variabel berisi
+    }
+
+    //Fungsi untuk mengganti tulisan di area result
+    const display = (text) => {
+        const result = document.getElementById('result'); //Elemen ber-Id "result"
+        result.textContent = text;
+    }
+
+    function input(id){
+        display(getCurrentResult() + document.getElementById(id).textContent);
+    }
+
+    //Fungsi untuk mereset result
+    function clr(){
+        display();
+    }
+</script>

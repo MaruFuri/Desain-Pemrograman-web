@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="Author" content="Akmal Zulkifli">
+    <title>My First Step</title>
+    <style>
+        body {
+            Padding: 25px 25%;
+        }
+
+        #daftar {
+            font-size: 18px;
+            border: solid black 1px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            border: solid black 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Pendaftaran Antrian Pasien Klinik Absol</h1>
+    <fieldset>
+        <table>
+            <form>
+                <legend>Formulir Pendaftaran</legend>
+                <tr>
+                    <td>
+                        <label for="nama">Nama </label>
+                    </td>
+                    <td>
+                        <input type="text" name="nama">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lahir">Tanggal lahir </label>
+                    </td>
+                    <td>
+                        <input type="date" name="lahir">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="kelamin">Jenis kelamin</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="pria" name="fav_language" value="PRIA">
+                        <label for="pria">Laki-Laki</label>
+                        <br>
+                        <input type="radio" id="wanita" name="fav_language" value="WANITA">
+                        <label for="wanita">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="alamat">Alamat </label>
+                    </td>
+                    <td>
+                        <textarea name="message" rows="10" cols="45"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="poli">Poli </label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="services1" name="services1" value="gigi">
+                        <label for="services1">Anak </label>
+                        <br>
+                        <input type="checkbox" id="services2" name="services2" value="jiwa">
+                        <label for="services2">Jiwa </label>
+                        <br>
+                        <input type="checkbox" id="services3" name="services3" value="mulut">
+                        <label for="services3">Gigi dan Mulut</label>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </fieldset>
+    <br>
+    <h1 align="center">Daftar Antrian</h1>
+    <table id="daftar">
+        <tr>
+            <th>Nomor Antrian</th>
+            <th>Nama</th>
+            <th>Poli</th>
+        </tr>
+        <tr>
+            <td align="center">3</td>
+            <td>Dmitri Naufal</td>
+            <td align="center">Anak</td>
+        </tr>
+        <tr>
+            <td align="center">4</td>
+            <td>Muhammad Alghifari</td>
+            <td align="center">Anak</td>
+        </tr>
+        <tr>
+            <td align="center">5</td>
+            <td>Andre Triana</td>
+            <td align="center">Gigi dan Mulut</td>
+        </tr>
+    </table>
+</body>
+
+</html>
