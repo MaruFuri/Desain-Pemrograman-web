@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Latihan 2</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function hitung() {
+        var all = 0;
+        var loop = prompt("Masukan Jumlah Barang ?", "");
+        var nama = new Array("100"),
+          harga = new Array("100"),
+          jumlah = new Array("100"),
+          total = new Array("100");
+
+        for (var i = 0; i < loop; i++) {
+          nama[i] = prompt("Masukan Nama Barang ke-" + (i + 1) + " ?", "");
+          harga[i] = prompt("Masukan Harga Barang ke-" + (i + 1) + " ?", "");
+          jumlah[i] = prompt("Masukan Jumlah Barang ke-" + (i + 1) + " ?", "");
+          total[i] = harga[i] * jumlah[i];
+          all += total[i];
+        }
+
+        var table = document.getElementById("table");
+        var row, td1, td2, td3, td4, td5, tdto;
+        var kosong1, kosong2;
+
+        for (var i = 0; i < loop; i++) {
+          row = document.createElement("tr");
+          console.log(row);
+          td1 = document.createElement("td");
+          td2 = document.createElement("td");
+          td3 = document.createElement("td");
+          td4 = document.createElement("td");
+
+          td1.innerHTML = nama[i];
+          td2.innerHTML = harga[i];
+          td3.innerHTML = jumlah[i];
+          td4.innerHTML = total[i];
+
+          row.appendChild(td1);
+          row.appendChild(td2);
+          row.appendChild(td3);
+          row.appendChild(td4);
+          if (i == loop - 1) {
+            table.children[0].appendChild(row);
+            row = document.createElement("tr");
+            tdto = document.createElement("td");
+            td5 = document.createElement("td");
+            td5.innerHTML = all;
+            tdto.innerHTML = "Total";
+            tdto.style.textAlign = "left";
+            tdto.colSpan = "3";
+
+            row.appendChild(tdto);
+            row.appendChild(td5);
+          }
+          table.children[0].appendChild(row);
+        }
+      }
+    </script>
+
+    <table id="table" border="1">
+      <tr>
+        <th>Nama Barang</th>
+        <th>Harga Barang</th>
+        <th>Jumlah</th>
+        <th>Sub Total</th>
+      </tr>
+      <script>
+        hitung();
+      </script>
+    </table>
+  </body>
+</html>

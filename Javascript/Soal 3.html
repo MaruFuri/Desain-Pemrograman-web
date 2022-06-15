@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Latihan 3</title>
+  </head>
+  <body>
+    <input type="button" value="Input Data" onclick="input()" id="addinput" />
+    <input type="button" value="Ubah Warna Background" onclick="color()" id="addcolor" />
+    <input type="button" value="Kembali Ke Warna Awal" onclick="del()" id="undo" />
+
+    <p id="nilai"></p>
+
+    <script>
+      var warna;
+      var nilai1, nilai2, nilai3, nilai4, nilai5, nilai6, nilai7, nilai8;
+
+      function ip(temp) {
+        if (temp >= 85 && temp <= 100) {
+          temp = 4;
+        } else if (temp >= 80 && temp <= 84.99) {
+          temp = 3.7;
+        } else if (temp >= 75 && temp <= 79.99) {
+          temp = 3.3;
+        } else if (temp >= 70 && temp <= 74.99) {
+          temp = 3.0;
+        } else if (temp >= 65 && temp <= 69.99) {
+          temp = 2.7;
+        } else if (temp >= 60 && temp <= 64.99) {
+          temp = 2.3;
+        } else if (temp >= 55 && temp <= 59.99) {
+          temp = 2;
+        } else if (temp >= 45 && temp <= 54.99) {
+          temp = 1;
+        } else if (temp >= 0 && temp <= 44.99) {
+          temp = 0;
+        }
+        return temp;
+      }
+
+      function input() {
+        var name = prompt("Masukkan Nama: ");
+        var data = prompt("Masukan NIM : ");
+        nilai1 = prompt("Masukan nilai Alpro (3sks): ");
+        nilai1 = ip(nilai1) * 3;
+
+        nilai2 = prompt("Masukan nilai Desweb (3sks): ");
+        nilai2 = ip(nilai2) * 3;
+
+        nilai3 = prompt("Masukan nilai Arskom (3sks): ");
+        nilai3 = ip(nilai3) * 3;
+
+        nilai4 = prompt("Masukan nilai Sistem Basis Data (3sks): ");
+        nilai4 = ip(nilai4) * 3;
+
+        nilai5 = prompt("Masukan nilai RPL (2sks): ");
+        nilai5 = ip(nilai5) * 2;
+
+        nilai6 = prompt("Masukan nilai Kriptografi (2sks): ");
+        nilai6 = ip(nilai6) * 2;
+
+        nilai7 = prompt("Masukan ninilai Statistika (3sks): ");
+        nilai7 = ip(nilai7) * 3;
+
+        nilai8 = prompt("Masukan nilai Kalkulus (3sks): ");
+        nilai8 = ip(nilai8) * 3;
+        var total = (nilai1 + nilai2 + nilai3 + nilai4 + nilai5 + nilai6 + nilai7 + nilai8) / 22;
+        document.getElementById("nilai").innerHTML = "Nama mahasiswa " + name + " dengan NIM " + data + " memperoleh nilai " + total;
+      }
+
+      function color() {
+        warna = prompt("Masukan Warna Background:");
+        document.body.style.backgroundColor = warna;
+      }
+
+      function del() {
+        warna = "white";
+        document.body.style.backgroundColor = warna;
+      }
+    </script>
+  </body>
+</html>
